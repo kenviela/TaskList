@@ -1,0 +1,109 @@
+:root {
+  --primary: #00E031;
+  --secondary: #28A142;
+  --light: #fff;
+  --fontColor: #362426;
+  --backgroundList: #bbbbbb;
+}
+
+/* Estilos generales */
+body {
+  font-family: cursive;
+  text-align: center;
+  margin: 0;
+  background-color: var(--light);
+  color: var(--fontColor);
+}
+
+/* Capitalizar primera letra */
+*::first-letter {
+  text-transform: capitalize;
+}
+
+.list {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: var(--backgroundList);
+  margin: 2em auto; /* Centrado con márgenes automáticos */
+  padding: 1.5em;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Título */
+.title {
+  font-size: 2em;
+  color: var(--primary);
+  text-shadow: 3px 3px 5px  var(--backgroundList);
+}
+
+/* Formulario */
+.taskForm {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.taskForm input {
+  width: 70%;
+  padding: 0.5em;
+  border: 2px solid var(--primary);
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.addTaskButton {
+  background-color: var(--primary);
+  color: var(--light);
+  border: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  font-size: 1.2em;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.addTaskButton:hover {
+  background-color: #2d4b22;
+}
+
+/* Contenedor de tareas */
+#tasksContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilos de cada tarea */
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  background-color: var(--light);
+  color: var(--fontColor);
+  padding: 0.8em;
+  border-radius: 5px;
+  margin: 0.5em 0;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Botón de eliminar */
+.deleteButton {
+  background-color: #8d8d8d;
+  color: var(--light);
+  border: none;
+  padding: 0.3em 0.6em;
+  cursor: pointer;
+  font-size: 0.9em;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.deleteButton:hover {
+  background-color: #A80014; /* Un tono más oscuro para mejor efecto */
+}
+
